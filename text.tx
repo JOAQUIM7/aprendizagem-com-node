@@ -1,0 +1,30 @@
+comandos utilizados no terminal
+01 npm init -y = pra iniciar o node com características pre definido de 
+02 npm install express --save = pra instalar o framework express pra utilizar requisições
+03 npm install nodemon --save-dev = para instalar uma biblioteca que ira ficar atualizando
+                                    o servidor automaticamente tipo um live server
+04 npm i express-async-errors --save = biblioteca para lidar com erros
+05 npm install sqlite3 sqlite --save = para instalar o banco de dados
+06 npm install bcryptjs = para poder trabalhar com criptografia de dados
+07 npm install knex --save = para instalar a query build do projeto
+08 npx knex init = para iniciar as configurações do query build
+09 npx knex migrate:make createNotes = para criar e iniciar uma tabela com migrations substituir o Notes pelo nome da tabela
+10 npx knex migrate:latest = para gerar a tabela
+11 npm run migrate = pra poder gerar a tabela via migrate
+
+
+podemos facilitar a inicialização utilizando no package.jason na parte scripts:
+"scripts": {
+    "start": "node ./src/server.js"
+  },
+
+assim agora basta utilizar o comando npm star para colocar em funcionamento a aplicação
+
+
+métodos:
+
+GET = leitura
+POST = criação
+put = atualização
+delete = deleção
+patch = atualização parcial
